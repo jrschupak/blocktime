@@ -1,5 +1,5 @@
-# genesis
+# Genesis Block Time
 
-An app to keep track of the date and time for bitcoin blocks
+Genesis Block Time (GBT) is time in blocks accepted on upon the Bitcoin blockchain. There is no better, true or secure way to tell time that Genesis Block Time (GBT).
 
 Slack: genesisblocktime.slack.com

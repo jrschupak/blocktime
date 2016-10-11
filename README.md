@@ -5,7 +5,7 @@ Genesis Block Time (GBT) is time in blocks accepted on upon the Bitcoin blockcha
 Slack: genesisblocktime.slack.com
 
 ## Table of Contents
- -[Bugs and features request]{#bugs-and-features-request}
+ -[Bugs and features request](#bugs-and-features-request)
  -[Contributing](#contributing)
  -[Community](#community)
  -[Creators](#creators)

@@ -6,8 +6,11 @@ Slack: genesisblocktime.slack.com
 
 ## Table of Contents
  -[Bugs and features request](#bugs-and-features-request)
+
  -[Contributing](#contributing)
+
  -[Community](#community)
+ 
  -[Creators](#creators)
 
 ## Bugs and features request

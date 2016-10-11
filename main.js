@@ -9,7 +9,7 @@ var seconds = document.querySelector('.seconds');
 console.log(day, hours, minutes, seconds.innerText);
 
 
-var timer = setInterval(function(){
+var timer = setInterval(function(){ //if needed this function is to make the timer tick
 	// console.log("Set Interval timer for 1 second")
 	if(seconds.value === "59"){
 		

@@ -10,7 +10,7 @@ Slack: genesisblocktime.slack.com
 Have a bug or a feature request? Please first read the issues and search for existing and closed issues. If your problem or idea is not addressed yet, please open a new issue.
 
 ## Contributing
-Looking to contribute something to Bootstrap? **Here's how you can help.**
+Looking to contribute something to Genesis Block Time? **Here's how you can help.**
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.

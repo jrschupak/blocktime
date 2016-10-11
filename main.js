@@ -6,22 +6,20 @@ var hours = document.querySelector('.hours');
 var minutes = document.querySelector('.minutes');
 var seconds = document.querySelector('.seconds');
 
-console.log(day, hours, minutes, seconds.innerText);
+console.log(day.innerText);
 
 
 var timer = setInterval(function(){ //if needed this function is to make the timer tick
 	// console.log("Set Interval timer for 1 second")
-	if(seconds.value === "59"){
-		
-	}
-}, 1000)
+	
+}, 000)
 
 $.ajax({
 	url: "http://api.coindesk.com/v1/bpi/currentprice.json",
 	dataType: "JSON"
 }).done(function(response){
-	console.log(response)
-
+	console.log(response.time)
+	day.innerText = response.time.updateduk;
 });
 
 } //end of window.onload

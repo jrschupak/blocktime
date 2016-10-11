@@ -7,6 +7,7 @@ Slack: genesisblocktime.slack.com
 ## Table of Contents
 
 ## Bugs and features request
+Have a bug or a feature request? Please first read the issues and search for existing and closed issues. If your problem or idea is not addressed yet, please open a new issue.
 
 ## Contributing
 
@@ -23,4 +24,3 @@ Slack: genesisblocktime.slack.com
  - <https://twitter.com/guylepage3>
  - <https://github.com/guylepage3>
 
- 

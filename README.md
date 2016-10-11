@@ -108,6 +108,9 @@ includes code changes) and under the terms of the
 (if it includes documentation changes).
 
 ## Community
+Get updates on Bootstrap's development and chat with the project maintainers and community members.
+
+- Join us on our [slack](http://genesisblocktime.slack.com) channel.
 
 ## Creators
 **Jonathan Schupak**

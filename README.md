@@ -13,12 +13,12 @@ Slack: genesisblocktime.slack.com
 ## Community
 
 ## Creators
- **Jonathan Schupak**
+**Jonathan Schupak**
 
  - <https://twitter.com/jrschupak>
  - <https://github.com/jrschupak>
 
- **Guy Lepage**
+**Guy Lepage**
 
  - <https://twitter.com/guylepage3>
  - <https://github.com/guylepage3>

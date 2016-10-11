@@ -16,6 +16,14 @@ var timer = setInterval(function(){ //if needed this function is to make the tim
 	}
 }, 1000)
 
+$.ajax({
+	url: "http://api.coindesk.com/v1/bpi/currentprice.json",
+	dataType: "JSON"
+}).done(function(response){
+	console.log(response)
 
-}
+});
+
+} //end of window.onload
+
 

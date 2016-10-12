@@ -119,14 +119,5 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 
 - Join us on our [slack](http://genesisblocktime.slack.com) channel.
 
-## Creators
-**Jonathan Schupak**
 
- - <https://twitter.com/jrschupak>
- - <https://github.com/jrschupak>
-
-**Guy Lepage**
-
- - <https://twitter.com/guylepage3>
- - <https://github.com/guylepage3>
 

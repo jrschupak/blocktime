@@ -21,6 +21,7 @@ var ajaxCall = function(){
 });
 }
 
+ajaxCall();
 
 var timer = setInterval(function(){ //if needed this function is to make the timer tick
 

@@ -22,6 +22,12 @@ var dateTimeCall = function(){
 });
 }
 
+var searchButton = document.querySelector('.search-onename');
+searchButton.addEventListener('click', function(){
+	console.log("Search button clicked")
+	addressCall();
+});
+
 var addressCall = function(){ //ajax call to onename API to get bitcoin address
 	var onenameInput = document.querySelector('.onename-input');
 	var query = "https://api.onename.com/v1/search?query=" + onenameInput.value + "&app-id=" + appID + "&app-secret=" + appSecret;

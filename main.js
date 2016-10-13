@@ -22,16 +22,29 @@ var dateTimeCall = function(){
 });
 }
 
+var addressCall = function(){ //ajax call to onename API to get bitcoin address
+	var onenameInput = document.querySelector('.onename-input');
+	var query = "https://api.onename.com/v1/search?query=" + onenameInput.value + "&app-id=" + appID + "&app-secret=" + appSecret;
+    console.log(query);
 
-var balanceCall = function(){
+    $.ajax({
+      url: query,
+      dataType: "JSON"
+    }).done(function(response){
+      console.log(response);
+
+    })//end of done function
+};
+
+var balanceCall = function(){ //Takes the address(es) from onename API and makes an ajax call to get balance in Shatoshi then converts it into BITCOIN
 	$.ajax({
 	// url: "https://blockexplorer.com/api/addr/" + address + "/balance",
 	url: "https://blockexplorer.com/api/addr/1DTRDHkWt3xyhrMCRHz1XV5DjCe9VxRoRW/balance",
 	dataType: "JSON"
 }).done(function(response){
 	console.log(response)
-})
-};
+}) //end of done function
+}; //end of balanceCall function
 
 
 

@@ -40,21 +40,23 @@ var addressCall = function(){ //ajax call to onename API to get bitcoin address
       console.log(response);
       //loop through each object and grab the bitcoin address of each user in the object. 
       for(var i = 0; i < response.results.length; i++){
-      	console.log(response.results[i].profile.bitcoin.address);
-      	
+      	// console.log(response.results[i].profile.bitcoin.address);
+      	var address = response.results[i].profile.bitcoin.address;
+      	console.log(address);
+      	balanceCall(address);
       }
       //make a balanceCall for each address
     })//end of done function
 };
 
-var balanceCall = function(){ //Takes the address(es) from onename API and makes an ajax call to get balance in Shatoshi then converts it into BITCOIN
+var balanceCall = function(address){ //Takes the address(es) from onename API and makes an ajax call to get balance in Shatoshi then converts it into BITCOIN
 	$.ajax({
-	// url: "https://blockexplorer.com/api/addr/" + address + "/balance",
-	url: "https://blockexplorer.com/api/addr/1DTRDHkWt3xyhrMCRHz1XV5DjCe9VxRoRW/balance",
+	url: "https://blockexplorer.com/api/addr/" + address + "/balance",
+	// url: "https://blockexplorer.com/api/addr/1DTRDHkWt3xyhrMCRHz1XV5DjCe9VxRoRW/balance",
 	dataType: "JSON"
 }).done(function(response){
 	console.log(response)
-	//
+	//use handlebars template to display each amount
 }) //end of done function
 }; //end of balanceCall function
 

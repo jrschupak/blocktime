@@ -39,7 +39,11 @@ var addressCall = function(){ //ajax call to onename API to get bitcoin address
     }).done(function(response){
       console.log(response);
       //loop through each object and grab the bitcoin address of each user in the object. 
-      //make a balanceCall for each address and display each one with handlesbars
+      for(var i = 0; i < response.results.length; i++){
+      	console.log(response.results[i].profile.bitcoin.address);
+      	
+      }
+      //make a balanceCall for each address
     })//end of done function
 };
 
@@ -50,6 +54,7 @@ var balanceCall = function(){ //Takes the address(es) from onename API and makes
 	dataType: "JSON"
 }).done(function(response){
 	console.log(response)
+	//
 }) //end of done function
 }; //end of balanceCall function
 

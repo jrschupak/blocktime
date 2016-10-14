@@ -55,13 +55,26 @@ var balanceCall = function(address){ //Takes the address(es) from onename API an
 	// url: "https://blockexplorer.com/api/addr/1DTRDHkWt3xyhrMCRHz1XV5DjCe9VxRoRW/balance",
 	dataType: "JSON"
 }).done(function(response){
-	console.log(response)
+	console.log("balanceCall, ", response)
 	//use handlebars template to display each amount
+	
+	
 }) //end of done function
 }; //end of balanceCall function
 
 
+//first grab the template from the index.html page
+var source = document.getElementById('handlebars-template').innerHTML;
 
+//compile the source and turn it into a function
+var template = Handlebars.compile(source);
+
+//pass the object to the function, store it in the "html" variable
+//the function will return computed html to us
+var computedHtml = template();
+
+var container = document.getElementById('handlebars-output');
+container.innerHTML = computedHtml;
 
 
 balanceCall();

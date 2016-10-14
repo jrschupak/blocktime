@@ -6,6 +6,7 @@ var dollar = document.querySelector('.dollars');
 var pound = document.querySelector('.pound');
 var euro = document.querySelector('.euro');
 var address = '';
+var responseArr = [];
 
 console.log(bst.innerText);
 
@@ -56,8 +57,10 @@ var balanceCall = function(address){ //Takes the address(es) from onename API an
 	dataType: "JSON"
 }).done(function(response){
 	console.log("balanceCall, ", response)
+	responseArr.push(response);
+	console.log(responseArr)
 	//use handlebars template to display each amount
-	
+	return responseArr;
 	
 }) //end of done function
 }; //end of balanceCall function
@@ -71,7 +74,7 @@ var template = Handlebars.compile(source);
 
 //pass the object to the function, store it in the "html" variable
 //the function will return computed html to us
-var computedHtml = template();
+var computedHtml = template(responseArr);
 
 var container = document.getElementById('handlebars-output');
 container.innerHTML = computedHtml;

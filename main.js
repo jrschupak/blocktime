@@ -1,12 +1,14 @@
-window.onload = function(){
-	console.log("Main.js is connected");
-
 var bst = document.querySelector('.bst');
 var dollar = document.querySelector('.dollars');
 var pound = document.querySelector('.pound');
 var euro = document.querySelector('.euro');
 var address = '';
-var responseArr = [];
+var responseObj = {responseArr: []};
+
+window.onload = function(){
+	console.log("Main.js is connected");
+
+
 
 console.log(bst.innerText);
 
@@ -57,16 +59,11 @@ var balanceCall = function(address){ //Takes the address(es) from onename API an
 	dataType: "JSON"
 }).done(function(response){
 	console.log("balanceCall, ", response)
-	responseArr.push(response);
-	console.log(responseArr)
+	responseObj.responseArr.push({amount: response});
+	console.log(responseObj)
 	//use handlebars template to display each amount
-	return responseArr;
-	
-}) //end of done function
-}; //end of balanceCall function
 
-
-//first grab the template from the index.html page
+	//first grab the template from the index.html page
 var source = document.getElementById('handlebars-template').innerHTML;
 
 //compile the source and turn it into a function
@@ -74,10 +71,15 @@ var template = Handlebars.compile(source);
 
 //pass the object to the function, store it in the "html" variable
 //the function will return computed html to us
-var computedHtml = template(responseArr);
+var computedHtml = template(responseObj);
 
 var container = document.getElementById('handlebars-output');
-container.innerHTML = computedHtml;
+container.innerHTML = computedHtml;	
+})//end of done function
+}; //end of balanceCall function
+
+
+
 
 
 balanceCall();

@@ -23,10 +23,12 @@
 	 Name<input class="onename-input"></input>
 	 <button class="search-onename">Search</button>
 	</div>
-	<div id="handlebars-output"></div>
-	<script id="handlebars-template" type="text/x-handle-bars-template">
+	<div id="handlebars-output"><p>Handlebars output<p></div>
+	<script id="handlebars-template" type="text/x-handlebars-template">
 		<div>
-			
+			{{#each responseArr}}
+				<p>{{amount}}</p>
+			{{/each}}
 
 		</div>
 	</script>

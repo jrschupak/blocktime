@@ -28,6 +28,11 @@ var dateTimeCall = function(){
 var searchButton = document.querySelector('.search-onename');
 searchButton.addEventListener('click', function(){
 	console.log("Search button clicked")
+
+	var container = document.getElementById('handlebars-output');
+
+	responseObj.responseArr = [];
+	container.innerHTML = " ";
 	addressCall();
 });
 
@@ -60,7 +65,10 @@ var balanceCall = function(address){ //Takes the address(es) from onename API an
 }).done(function(response){
 	console.log("balanceCall, ", response)
 	responseObj.responseArr.push({amount: response});
-	console.log(responseObj)
+	console.log(responseObj);
+
+	
+	
 	//use handlebars template to display each amount
 
 	//first grab the template from the index.html page

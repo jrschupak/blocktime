@@ -1,14 +1,18 @@
 .timer {
 	background: rgba(220,220,220, 1);
-	height: 150px;
+
 }
 
 .timer > .col-lg-3 {
 	font-size: 20px;
-	height: 100%;
+
 	margin: auto;
 }
 
 h3{
 	margin: auto;
+}
+
+.onename-search {
+	margin-top: 25px;
 }

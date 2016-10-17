@@ -14,9 +14,11 @@ h3{
 .onename-search {
 	position: relative;
 	top: 25px;
+	left: 20px;
 }
 
 #handlebars-output {
 	position: relative;
-	top: 25px;
+	top: 45px;
+	left: 25px;
 }

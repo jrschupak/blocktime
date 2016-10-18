@@ -14,17 +14,20 @@
 
  .timer {
 	background: rgba(220,220,220, 1);
-	height: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
 }
 
 .timer > .col-lg-3 {
 	font-size: 20px;
-	height: 100%;
 	margin: auto;
 }
 
-h3{
-	margin: auto;
+
+
+h2 {
+	margin-top: 0px;
 }
 
 .onename-input {

@@ -31,3 +31,9 @@ h3{
 	margin-left: 20px;
 	margin-top: 20px;
 }
+
+#handlebars-output {
+	font-size: 25px;
+	margin-top: 25px;
+	margin-left: 20px;
+}

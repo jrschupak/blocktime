@@ -64,6 +64,7 @@ var balanceCall = function(address){ //Takes the address(es) from onename API an
 	dataType: "JSON"
 }).done(function(response){
 	console.log("balanceCall, ", response)
+	response = response * 0.00000001;
 	responseObj.responseArr.push({amount: response});
 	console.log(responseObj);
 

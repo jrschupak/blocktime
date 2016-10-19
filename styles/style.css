@@ -30,6 +30,11 @@ h2 {
 	margin-top: 0px;
 }
 
+.search {
+	background: gray;
+	padding-bottom: 20px;
+}
+
 .onename-input {
 	margin-left: 20px;
 	margin-top: 20px;
@@ -38,5 +43,7 @@ h2 {
 #handlebars-output {
 	font-size: 25px;
 	margin-top: 25px;
-	margin-left: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	background: gray;
 }

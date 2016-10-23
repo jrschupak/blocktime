@@ -8,6 +8,17 @@
 	padding-top: 70px;
 }
 
+.gbt-wrapper {
+	background: black;
+	color: white;
+	height: 400px;
+}
+
+.gbt-wrapper > p {
+	padding-top: 190px;
+
+}
+
 #bitcoin {
 	width: 75px;
 }

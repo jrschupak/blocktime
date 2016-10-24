@@ -48,8 +48,23 @@ var blockCount = function(){ //ajaxcall to blockexplorer for block height/count
 		gbt.innerText = response.blockcount;
 	})
 }
+var lastHash = function(){ //ajaxcall to blockexplorer for last hash
+	var gbh = document.querySelector(".gbt-hash");
+	console.log(gbh)
 
-blockCount()
+	$.ajax({
+		url: "https://blockexplorer.com/api/status?q=getLastBlockHash",
+		dataType: "JSON"
+	}).done(function(response){
+		console.log(response)
+		gbh.innerText = response.lastblockhash;
+	})
+}
+
+blockCount();
+lastHash();
+
+
 
 var addressCall = function(){ //ajax call to onename API to get bitcoin address
 	var onenameInput = document.querySelector('.onename-input');
@@ -109,11 +124,12 @@ container.innerHTML = computedHtml;
 balanceCall();
 dateTimeCall();
 
-var timer = setInterval(function(){ //if needed this function is to make the timer tick
+var currentBlockInfo = setInterval(function(){ //if needed this function is to make the timer tick
 
-dateTimeCall();
+blockCount();
+lastHash();
 	
-}, 10000)
+}, 20000)
 
 
 

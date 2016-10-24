@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #header {
 	background: rgb(255,135,0);
 	margin-top: 0px;
@@ -11,13 +12,49 @@
 
 .timer {
 	background: rgba(220,220,220, 1);
+=======
+.header {
+	background: rgb(255, 135, 000);
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	height: 200px;
+	padding-top: 70px;
 }
 
-.timer > .col-lg-3 {
+.gbt-wrapper {
+	background: black;
+	color: white;
+	height: 400px;
+}
+
+.gbt-time {
+	width: 100%;
+	padding-top: 190px;
+	font-size: 50px;
+}
+
+
+
+#bitcoin {
+	width: 75px;
+}
+
+ .btc {
+	background: rgba(220,220,220, 1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+>>>>>>> fc01a970d60d4c50e790b44d17c3ffaeb2ade2a0
+}
+
+.btc > .col-lg-3 {
 	font-size: 20px;
 	margin: auto;
 }
 
+<<<<<<< HEAD
 h3{
 	margin: auto;
 }
@@ -36,4 +73,28 @@ h3{
 
 .amount {
 	font-size: 25px;
+=======
+
+
+h2 {
+	margin-top: 0px;
+}
+
+.search {
+	background: gray;
+	padding-bottom: 20px;
+}
+
+.onename-input {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#handlebars-output {
+	font-size: 25px;
+	margin-top: 25px;
+	padding-left: 20px;
+	padding-top: 20px;
+	background: gray;
+>>>>>>> fc01a970d60d4c50e790b44d17c3ffaeb2ade2a0
 }

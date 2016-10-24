@@ -14,8 +14,8 @@ console.log(bst.innerText);
 
 var dateTimeCall = function(){
 	$.ajax({
-	url: "http://api.coindesk.com/v1/bpi/currentprice.json",
-	dataType: "JSON"
+	url: "http://api.coindesk.com/v1/bpi/currentprice.json", //http://www.coindesk.com/api/
+		dataType: "JSON"
 }).done(function(response){
 	console.log(response)
 	bst.innerText = response.time.updateduk;
@@ -25,16 +25,37 @@ var dateTimeCall = function(){
 });
 }
 
-var searchButton = document.querySelector('.search-onename');
-searchButton.addEventListener('click', function(){
-	console.log("Search button clicked")
 
-	var container = document.getElementById('handlebars-output');
 
-	responseObj.responseArr = [];
-	container.innerHTML = " ";
-	addressCall();
-});
+var blockCount = function(){ //ajaxcall to blockexplorer for block height/count
+	var gbt = document.querySelector(".gbt-time");
+	console.log(gbt)
+
+	$.ajax({
+		url: "https://blockexplorer.com/api/status?q=getBlockCount",
+		dataType: "JSON"
+	}).done(function(response){
+		console.log(response)
+		gbt.innerText = "GBT: " + response.blockcount;
+	})
+}
+var lastHash = function(){ //ajaxcall to blockexplorer for last hash
+	var gbh = document.querySelector(".gbt-hash");
+	console.log(gbh)
+
+	$.ajax({
+		url: "https://blockexplorer.com/api/status?q=getLastBlockHash",
+		dataType: "JSON"
+	}).done(function(response){
+		console.log(response)
+		gbh.innerText = "Block Hash: " + response.lastblockhash;
+	})
+}
+
+blockCount();
+lastHash();
+
+
 
 var addressCall = function(){ //ajax call to onename API to get bitcoin address
 	var onenameInput = document.querySelector('.onename-input');
@@ -94,11 +115,12 @@ container.innerHTML = computedHtml;
 balanceCall();
 dateTimeCall();
 
-var timer = setInterval(function(){ //if needed this function is to make the timer tick
+var currentBlockInfo = setInterval(function(){ //if needed this function is to make the timer tick
 
-dateTimeCall();
+blockCount();
+lastHash();
 	
-}, 10000)
+}, 20000)
 
 
 

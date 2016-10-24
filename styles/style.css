@@ -16,8 +16,8 @@
 
 .gbt-time {
 	width: 100%;
-	padding-top: 190px;
-	font-size: 50px;
+	padding-top: 150px;
+	font-size: 75px;
 }
 
 
@@ -43,6 +43,27 @@
 h2 {
 	margin-top: 0px;
 }
+
+.currency {
+	font-size: 30px;
+}
+
+@media(max-width: 700px){
+	.currency {
+	font-size: 60px;
+	}
+}
+
+.bst {
+	font-size: 25px;
+}
+
+@media(max-width: 700px){
+	.bst {
+	font-size: 60px;
+	}
+}
+
 
 .search {
 	background: gray;

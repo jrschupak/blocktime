@@ -36,7 +36,7 @@ var blockCount = function(){ //ajaxcall to blockexplorer for block height/count
 		dataType: "JSON"
 	}).done(function(response){
 		console.log(response)
-		gbt.innerText = response.blockcount;
+		gbt.innerText = "GBT: " + response.blockcount;
 	})
 }
 var lastHash = function(){ //ajaxcall to blockexplorer for last hash
@@ -48,7 +48,7 @@ var lastHash = function(){ //ajaxcall to blockexplorer for last hash
 		dataType: "JSON"
 	}).done(function(response){
 		console.log(response)
-		gbh.innerText = response.lastblockhash;
+		gbh.innerText = "Block Hash: " + response.lastblockhash;
 	})
 }
 

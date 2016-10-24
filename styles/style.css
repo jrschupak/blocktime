@@ -15,10 +15,12 @@
 }
 
 .gbt-time {
+	width: 100%;
 	padding-top: 190px;
 	font-size: 50px;
-
 }
+
+
 
 #bitcoin {
 	width: 75px;

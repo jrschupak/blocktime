@@ -14,8 +14,8 @@ console.log(bst.innerText);
 
 var dateTimeCall = function(){
 	$.ajax({
-	url: "http://api.coindesk.com/v1/bpi/currentprice.json",
-	dataType: "JSON"
+	url: "http://api.coindesk.com/v1/bpi/currentprice.json", //http://www.coindesk.com/api/
+		dataType: "JSON"
 }).done(function(response){
 	console.log(response)
 	bst.innerText = response.time.updateduk;
@@ -35,6 +35,17 @@ searchButton.addEventListener('click', function(){
 	container.innerHTML = " ";
 	addressCall();
 });
+
+var blockCount = function(){ //ajaxcall to blockexplorer for block height/count
+	$.ajax({
+		url: "https://blockexplorer.com/api/status?q=getBlockCount",
+		dataType: "JSON"
+	}).done(function(response){
+		console.log(response)
+	})
+}
+
+blockCount()
 
 var addressCall = function(){ //ajax call to onename API to get bitcoin address
 	var onenameInput = document.querySelector('.onename-input');

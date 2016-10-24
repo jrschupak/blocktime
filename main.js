@@ -25,16 +25,7 @@ var dateTimeCall = function(){
 });
 }
 
-var searchButton = document.querySelector('.search-onename');
-searchButton.addEventListener('click', function(){
-	console.log("Search button clicked")
 
-	var container = document.getElementById('handlebars-output');
-
-	responseObj.responseArr = [];
-	container.innerHTML = " ";
-	addressCall();
-});
 
 var blockCount = function(){ //ajaxcall to blockexplorer for block height/count
 	var gbt = document.querySelector(".gbt-time");

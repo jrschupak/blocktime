@@ -6,6 +6,7 @@
 	text-align: center;
 	height: 200px;
 	padding-top: 70px;
+	font-size: 50px;
 }
 
 .gbt-wrapper {
@@ -16,53 +17,33 @@
 
 .gbt-time {
 	width: 100%;
-	padding-top: 150px;
+	padding-top: 125px;
 	font-size: 75px;
 }
 
-
-
 #bitcoin {
-	width: 75px;
+	width: 100px;
 }
 
- .btc {
+.btc {
 	background: rgba(220,220,220, 1);
 	padding-top: 20px;
 	padding-bottom: 20px;
-	
 }
 
 .btc > .col-lg-3 {
-	font-size: 20px;
+	font-size: 30px;
 	margin: auto;
 }
 
-
-
-h2 {
-	margin-top: 0px;
-}
-
-.currency {
-	font-size: 30px;
-}
-
 @media(max-width: 700px){
-	.currency {
+	 .btc > .col-lg-3 {
 	font-size: 60px;
 	}
 }
 
-.bst {
-	font-size: 25px;
-}
 
-@media(max-width: 700px){
-	.bst {
-	font-size: 60px;
-	}
-}
+
 
 
 .search {

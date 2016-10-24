@@ -37,11 +37,15 @@ searchButton.addEventListener('click', function(){
 });
 
 var blockCount = function(){ //ajaxcall to blockexplorer for block height/count
+	var gbt = document.querySelector(".gbt-time");
+	console.log(gbt)
+
 	$.ajax({
 		url: "https://blockexplorer.com/api/status?q=getBlockCount",
 		dataType: "JSON"
 	}).done(function(response){
 		console.log(response)
+		gbt.innerText = response.blockcount;
 	})
 }
 

@@ -41,10 +41,22 @@
 	height: 400px;
 }
 
+@media(max-width: 1000px) {
+	.gbt-wrapper{
+		height: 500px;
+	}
+}
+
 .gbt-time {
 	width: 100%;
 	padding-top: 125px;
 	font-size: 90px;
+}
+
+@media(max-width: 1000px) {
+	.gbt-time{
+		font-size: 135px;
+	}
 }
 
 .gbt-hash {

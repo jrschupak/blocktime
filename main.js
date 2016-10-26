@@ -122,6 +122,25 @@ lastHash();
 	
 }, 20000)
 
+//10/25/16
+var blockDay25 = 142;
+var blockHour25 = 5.9167;
+var blockMin25 = .0986;
+
+//10/24/16
+var blockDay24 = 139;
+var blockHour24 = 5.7916;
+var blockMin24 = .0965;
+
+//10/23/16
+var blockDay23 = 145;
+var blockHour23 = 6.0417;
+var blockMin23 = .1007;
+
+//average of blocks per day is 142
+var blockDay = 142;
+var blockHour = 5.9167;
+var blockMin = .0986;
 
 
 } //end of window.onload

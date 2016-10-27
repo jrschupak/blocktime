@@ -68,14 +68,27 @@
 	height: 300px;
 }
 
+.conversions > p {
+	font-size: 40px;
+}
+
+.time-to-block {
+	margin-top: 25px;
+}
+
+.time-to-block > .col-lg-6 > button {
+	margin-top: 25px;
+}
+
 .block-to-time {
 	display: none;
 }
 
 #time-to-block-display {
-	position: absolute;
+	/*position: absolute;
 	top: 20px;
-	right: 40px;
+	right: 40px;*/
+	float: right;
 	font-size: 50px;
 }
 

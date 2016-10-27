@@ -160,7 +160,7 @@ var timeToBlockConversion = function() { //function make conversion between gbt 
 	console.log(total);
 
 	var display = document.getElementById("time-to-block-display");
-	display.innerText = total;
+	display.innerText = "Blocks: " + total;
 };
 
 timeToBlocksBtn.addEventListener("click", function(){
@@ -168,7 +168,7 @@ timeToBlocksBtn.addEventListener("click", function(){
 });
 
 var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1 for min then add all together
-	
+
 
 }
 

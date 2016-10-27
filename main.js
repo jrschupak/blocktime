@@ -115,12 +115,12 @@ container.innerHTML = computedHtml;
 balanceCall();
 dateTimeCall();
 
-var currentBlockInfo = setInterval(function(){ //if needed this function is to make the timer tick
+var currentBlockInfo = setInterval( function (){ //if needed this function is to make the timer tick
 
 blockCount();
 lastHash();
 	
-}, 20000)
+}, 20000);
 
 //10/25/16
 var blockDay25 = 142;
@@ -141,6 +141,11 @@ var blockMin23 = .1007;
 var blockDay = 142;
 var blockHour = 5.9167;
 var blockMin = .0986;
+
+
+var blockTimeConversion = function() { //function make conversion between gbt and human time
+
+};
 
 
 } //end of window.onload

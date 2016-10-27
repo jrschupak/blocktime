@@ -149,6 +149,9 @@ var blockMin23 = .1007;
 var blockTimeConversion = function() { //function make conversion between gbt and human time
 	var blocksPerDay = blockDay * daysInput.value;
 	console.log(blocksPerDay);
+
+	var blocksPerHour = blockHour * hoursInput.value;
+	console.log(blocksPerHour);
 };
 
 timeToBlocksBtn.addEventListener("click", function(){

@@ -152,6 +152,12 @@ var blockTimeConversion = function() { //function make conversion between gbt an
 
 	var blocksPerHour = blockHour * hoursInput.value;
 	console.log(blocksPerHour);
+
+	var blocksPerMin = blockMin * minsInput.value;
+	console.log(blocksPerMin);
+
+	var total = blocksPerDay + blocksPerHour + blocksPerMin;
+	console.log(total);
 };
 
 timeToBlocksBtn.addEventListener("click", function(){

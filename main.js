@@ -168,7 +168,7 @@ timeToBlocksBtn.addEventListener("click", function(){
 });
 
 var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1 for min.
-
+	
 }
 
 

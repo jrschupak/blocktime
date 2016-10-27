@@ -158,6 +158,9 @@ var timeToBlockConversion = function() { //function make conversion between gbt 
 
 	var total = blocksPerDay + blocksPerHour + blocksPerMin;
 	console.log(total);
+
+	var display = document.getElementById("time-to-block-display");
+	display.innerText = total;
 };
 
 timeToBlocksBtn.addEventListener("click", function(){

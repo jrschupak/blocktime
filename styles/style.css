@@ -68,6 +68,10 @@
 	height: 300px;
 }
 
+.block-to-time {
+	display: none;
+}
+
 #bitcoin {
 	width: 100px;
 	margin: 10px;

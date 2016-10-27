@@ -4,6 +4,15 @@ var pound = document.querySelector('.pound');
 var euro = document.querySelector('.euro');
 var address = '';
 var responseObj = {responseArr: []};
+var timeToBlocksBtn = document.getElementById('block-conversion');
+var daysInput = document.getElementById('days-input');
+var hoursInput = document.getElementById('hours-input');
+var minsInput = document.getElementById('mins-input');
+
+//average of blocks per day is 142
+var blockDay = 142;
+var blockHour = 5.9167;
+var blockMin = .0986;
 
 window.onload = function(){
 	console.log("Main.js is connected");
@@ -137,15 +146,14 @@ var blockDay23 = 145;
 var blockHour23 = 6.0417;
 var blockMin23 = .1007;
 
-//average of blocks per day is 142
-var blockDay = 142;
-var blockHour = 5.9167;
-var blockMin = .0986;
-
-
 var blockTimeConversion = function() { //function make conversion between gbt and human time
-
+	var blocksPerDay = blockDay * daysInput.value;
+	console.log(blocksPerDay);
 };
+
+timeToBlocksBtn.addEventListener("click", function(){
+	blockTimeConversion();
+});
 
 
 } //end of window.onload

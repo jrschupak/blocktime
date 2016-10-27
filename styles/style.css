@@ -63,6 +63,11 @@
 	font-size: 20px;
 }
 
+.conversions {
+	background: #226980;
+	height: 300px;
+}
+
 #bitcoin {
 	width: 100px;
 	margin: 10px;

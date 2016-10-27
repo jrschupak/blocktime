@@ -4,7 +4,7 @@ var pound = document.querySelector('.pound');
 var euro = document.querySelector('.euro');
 var address = '';
 var responseObj = {responseArr: []};
-var timeToBlocksBtn = document.getElementById('block-conversion');
+var timeToBlocksBtn = document.getElementById('time-conversion');
 var daysInput = document.getElementById('days-input');
 var hoursInput = document.getElementById('hours-input');
 var minsInput = document.getElementById('mins-input');
@@ -146,7 +146,7 @@ var blockDay23 = 145;
 var blockHour23 = 6.0417;
 var blockMin23 = .1007;
 
-var blockTimeConversion = function() { //function make conversion between gbt and human time
+var timeToBlockConversion = function() { //function make conversion between gbt and human time
 	var blocksPerDay = blockDay * daysInput.value;
 	console.log(blocksPerDay);
 
@@ -161,8 +161,12 @@ var blockTimeConversion = function() { //function make conversion between gbt an
 };
 
 timeToBlocksBtn.addEventListener("click", function(){
-	blockTimeConversion();
+	timeToBlockConversion();
 });
+
+var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1 for min.
+
+}
 
 
 } //end of window.onload

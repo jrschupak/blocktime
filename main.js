@@ -175,8 +175,10 @@ blockToTimeBtn.addEventListener('click', function(){
 
 var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1 for min then add all together
  	var days = blocksInput.value/blockDay;
- 	console.log(days);
- 	
+ 	console.log("days: ", days);
+
+ 	var hours = (days%1)*24;
+ 	console.log("hours: ", hours);
 
 
 

@@ -80,8 +80,16 @@
 	margin-top: 25px;
 }
 
+@media(max-width: 700px){
+	.time-to-block > .col-lg-6 > input {
+		font-size: 100px;
+	}
+}
+
+
 .block-to-time {
-	display: none;
+	/*display: none;*/
+	margin-top: 25px;
 }
 
 #time-to-block-display {

@@ -5,6 +5,8 @@ var euro = document.querySelector('.euro');
 var address = '';
 var responseObj = {responseArr: []};
 var timeToBlocksBtn = document.getElementById('time-conversion');
+var blockToTimeBtn = document.getElementById('block-conversion');
+var blocksInput = document.getElementById('blocks-input');
 var daysInput = document.getElementById('days-input');
 var hoursInput = document.getElementById('hours-input');
 var minsInput = document.getElementById('mins-input');
@@ -136,14 +138,14 @@ var blockDay25 = 142;
 var blockHour25 = 5.9167;
 var blockMin25 = .0986;
 
-//10/24/16
-var blockDay24 = 139;
-var blockHour24 = 5.7916;
-var blockMin24 = .0965;
+// //10/24/16
+// var blockDay24 = 139;
+// var blockHour24 = 5.7916;
+// var blockMin24 = .0965;
 
-//10/23/16
-var blockDay23 = 145;
-var blockHour23 = 6.0417;
+// //10/23/16
+// var blockDay23 = 145;
+// var blockHour23 = 6.0417;
 var blockMin23 = .1007;
 
 var timeToBlockConversion = function() { //function make conversion between gbt and human time
@@ -167,7 +169,15 @@ timeToBlocksBtn.addEventListener("click", function(){
 	timeToBlockConversion();
 });
 
+blockToTimeBtn.addEventListener('click', function(){
+	blockToTimeConversion();
+})
+
 var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1 for min then add all together
+ 	var days = blocksInput.value/blockDay;
+ 	console.log(days);
+ 	
+
 
 
 }

@@ -180,8 +180,8 @@ var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1
  	var hours = (days%1)*24;
  	console.log("hours: ", hours);
 
-
-
+ 	var minutes = (hours%1)*60;
+ 	console.log("Minutes: ", minutes);
 }
 
 

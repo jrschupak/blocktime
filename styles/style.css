@@ -86,18 +86,22 @@
 	}
 }
 
-
-.block-to-time {
-	/*display: none;*/
-	margin-top: 25px;
-}
-
 #time-to-block-display {
 	/*position: absolute;
 	top: 20px;
 	right: 40px;*/
 	float: right;
 	font-size: 50px;
+}
+
+.block-to-time {
+	/*display: none;*/
+	margin-top: 25px;
+}
+
+.block-to-time-display {
+	
+	margin-top: 25px;
 }
 
 #bitcoin {

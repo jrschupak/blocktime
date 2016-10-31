@@ -10,6 +10,9 @@ var blocksInput = document.getElementById('blocks-input');
 var daysInput = document.getElementById('days-input');
 var hoursInput = document.getElementById('hours-input');
 var minsInput = document.getElementById('mins-input');
+var daysDisplay = document.getElementById("block-in-days");
+var hoursDisplay = document.getElementById("block-in-hours");
+var minutesDisplay = document.getElementById("block-in-minutes");
 
 //average of blocks per day is 142
 var blockDay = 142;
@@ -174,14 +177,18 @@ blockToTimeBtn.addEventListener('click', function(){
 })
 
 var blockToTimeConversion = function() {    // 3 equtions 1 for day 1 for hour 1 for min then add all together
- 	var days = blocksInput.value/blockDay;
- 	console.log("days: ", days);
+ 	var days = (blocksInput.value/blockDay);
+ 	console.log("days: ", days.toFixed(0)); //change to only a whole number
 
  	var hours = (days%1)*24;
  	console.log("hours: ", hours);
 
  	var minutes = (hours%1)*60;
  	console.log("Minutes: ", minutes);
+
+ 	daysDisplay.innerText = "Days: " + days;
+ 	hoursDisplay.innerText = "Hours: " + hours;
+ 	minutesDisplay.innerText = "Minutes: " + minutes;
 }
 
 

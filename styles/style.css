@@ -65,7 +65,7 @@
 
 .conversions {
 	background: #226980;
-	height: 300px;
+	height: 350px;
 }
 
 .conversions > p {
@@ -102,6 +102,7 @@
 .block-to-time-display {
 	
 	margin-top: 25px;
+	font-size: 50px;
 }
 
 #bitcoin {

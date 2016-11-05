@@ -97,6 +97,7 @@
 @media(max-width: 1000px){
 	#block-conversion {
 		font-size: 25px;
+		margin-top: 25px;
 	}
 }
 

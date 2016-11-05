@@ -96,7 +96,7 @@
 
 @media(max-width: 1000px){
 	#block-conversion {
-		font-size: 25px;
+		font-size: 35px;
 		margin-top: 25px;
 	}
 }
@@ -104,7 +104,7 @@
 
 @media(max-width: 1000px){
 	#time-conversion {
-		font-size: 25px;
+		font-size: 35px;
 		
 	}
 }
